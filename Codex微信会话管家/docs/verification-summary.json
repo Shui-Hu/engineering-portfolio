@@ -1,0 +1,35 @@
+{
+  "record_date": "2026-10-08",
+  "snapshot": "local-oneclick-restore",
+  "evidence_type": "summary_of_retained_local_validation_records",
+  "tests_rerun_for_portfolio_preparation": false,
+  "manager_regression_tests_passed": 31,
+  "desktop_control_tests_passed": 8,
+  "desktop_app_version_tested": "26.1002.7124.0",
+  "desktop_window_flow": {
+    "real_user_threads_changed": 0,
+    "dedicated_test_threads": 1,
+    "model_turns_started": 0,
+    "wechat_messages_sent": 0,
+    "normal_and_minimum_window_bounds_checked": true,
+    "button_restored_same_id_without_manual_archive": true,
+    "persisted_test_content_retained": true,
+    "same_desktop_process_remained_running": true,
+    "connection_and_cancel_buttons_checked_with_fake_inbox": true,
+    "disposable_test_thread_archived_after_verification": true,
+    "real_private_config_unchanged": true
+  },
+  "live_wechat_tested_in_this_version": false,
+  "source_repository_updated_in_this_task": false,
+  "user_supplied_screenshot_evidence": {
+    "manager_running_screenshot": "images/session-manager.png",
+    "wechat_chat_screenshot": "images/wechat-file-demo.jpg",
+    "shows_ai_labeled_chat_entry": true,
+    "shows_text_replies": true,
+    "shows_dwg_attachment_card": true,
+    "attachment_card_includes_not_downloaded_state": true,
+    "downloaded_file_content_or_hash_verified": false,
+    "all_historical_message_versions_verified": false,
+    "pixels_modified": false
+  }
+}

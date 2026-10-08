@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="510" viewBox="0 0 1120 510">
+<title>Codex 微信会话管家架构示意</title><desc>界面与微信桥接共用一个会话后台。一键恢复通过桌面端归档释放占用，再由后台恢复同一个会话。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0L8 4L0 8Z" fill="#37806b"/></marker></defs>
+<rect width="1120" height="510" rx="22" fill="#f0f5f2"/>
+<g font-family="Microsoft YaHei, sans-serif" fill="#173e33"><text x="42" y="53" font-size="25" font-weight="bold">会话管理与微信任务共用后台</text><text x="42" y="80" font-size="14" fill="#647e73">架构示意 · 本机执行 · 保留持久会话</text></g>
+<g fill="white" stroke="#bed6ca" stroke-width="1.5">
+<rect x="42" y="127" width="222" height="100" rx="12"/><rect x="42" y="297" width="222" height="100" rx="12"/>
+<rect x="343" y="127" width="260" height="100" rx="12"/><rect x="343" y="297" width="260" height="100" rx="12"/>
+<rect x="687" y="127" width="360" height="100" rx="12"/><rect x="687" y="297" width="360" height="100" rx="12"/>
+</g>
+<g font-family="Microsoft YaHei, sans-serif" text-anchor="middle" fill="#173e33">
+<text x="153" y="165" font-size="19" font-weight="bold">Windows 管理界面</text><text x="153" y="192" font-size="14">列表 · 预览 · 接管 · 恢复</text>
+<text x="153" y="335" font-size="19" font-weight="bold">微信官方 AI 入口</text><text x="153" y="362" font-size="14">文字消息 · 文件附件</text>
+<text x="473" y="165" font-size="19" font-weight="bold">SessionService</text><text x="473" y="192" font-size="14">会话状态 · 配置提交</text>
+<text x="473" y="335" font-size="19" font-weight="bold">微信桥接</text><text x="473" y="362" font-size="14">长轮询 · 上传 · 下载</text>
+<text x="867" y="165" font-size="19" font-weight="bold">常驻 Codex app-server</text><text x="867" y="192" font-size="14">持久会话 · 本机任务执行</text>
+<text x="867" y="335" font-size="19" font-weight="bold">桌面 Codex 本地接口</text><text x="867" y="362" font-size="14">检查空闲 → 归档 → 释放占用</text>
+</g>
+<g fill="none" stroke="#37806b" stroke-width="2.5" marker-end="url(#arrow)">
+<path d="M264 177H335"/><path d="M264 347H335" marker-start="url(#arrow)"/><path d="M603 177H679" marker-start="url(#arrow)"/>
+<path d="M473 297V235"/><path d="M603 347H679" stroke-dasharray="6 5"/><path d="M867 297V235" stroke-dasharray="6 5"/>
+</g>
+<g font-family="Microsoft YaHei, sans-serif" fill="#647e73" font-size="14"><text x="42" y="457">实线：正常工作路径　虚线：一键恢复的桌面交接</text><text x="42" y="482">桌面归档并释放占用后，由管理后台恢复、接管同一个会话 ID。</text></g>
+</svg>
